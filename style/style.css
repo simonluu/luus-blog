@@ -1,0 +1,12 @@
+form a {
+	margin-left: 5px;
+}
+
+.header-link {
+	color: black;
+}
+
+.header-link:hover {
+	color: black;
+	text-decoration: none;
+}
