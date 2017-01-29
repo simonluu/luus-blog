@@ -14,7 +14,7 @@ class PostsNew extends Component {
 		this.props.createPost(props)
 			.then(() => {
 				// blog post has been created, navigate to index
-				this.context.router.push('/');
+				this.context.router.push('/luus-blog');
 			});
 	}
 
@@ -50,7 +50,7 @@ class PostsNew extends Component {
 				</div>
 
 				<button type="submit" className="btn btn-primary">Submit</button>
-				<Link to="/" className="btn btn-danger">Cancel</Link>
+				<Link to="/luus-blog" className="btn btn-danger">Cancel</Link>
 			</form>
 		);
 	}

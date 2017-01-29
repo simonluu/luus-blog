@@ -16,7 +16,7 @@ class PostsShow extends Component {
 	onDeleteClick() {
 		this.props.deletePost(this.props.params.id)
 			.then(() => {
-				this.context.router.push('/');
+				this.context.router.push('/luus-blog');
 			});
 	}
 
@@ -41,7 +41,7 @@ class PostsShow extends Component {
 
 		return (
 			<div style={{ textAlign: 'center' }}>
-				<Link to='/'>Back to Main Page</Link>
+				<Link to='/luus-blog'>Back to Main Page</Link>
 				<h3>{post.title}</h3>
 				<h6>Categories: {post.categories}</h6>
 				<p>{post.content}</p>

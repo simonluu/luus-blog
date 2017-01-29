@@ -11,7 +11,7 @@ class PostsIndex extends Component {
 	renderPosts() {
 		return this.props.posts.map((post) => {
 			return (
-				<Link key={post.id} to={"/posts/" + post.id}>
+				<Link key={post.id} to={"/luus-blog/posts/" + post.id}>
 					<li className="list-group-item">
 							<span style={{ float: 'right' }}>{post.categories}</span>
 							<strong>{post.title}</strong>
@@ -25,7 +25,7 @@ class PostsIndex extends Component {
 		if (this.props.authenticated) {
 			return (
 				<div className="text-right">
-					<Link to="/posts/new" className="btn btn-primary">
+					<Link to="/luus-blog/posts/new" className="btn btn-primary">
 						Add a Post
 					</Link>
 				</div>
