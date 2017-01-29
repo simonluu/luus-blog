@@ -12,9 +12,9 @@ import AuthenticationPage from './components/authenticationpage';
 
 export default (
 	<Route component={App}>
-		<Route path="/luus-blog" component={PostsIndex} />
-		<Route path="/luus-blog/posts/new" component={PostsNew} />
-		<Route path="/luus-blog/posts/:id" component={PostsShow} />
-		<Route path="/luus-blog/1eZAqU7HbXBrNXfy1rtx" component={AuthenticationPage} />
+		<Route path="/" component={PostsIndex} />
+		<Route path="/posts/new" component={PostsNew} />
+		<Route path="/posts/:id" component={PostsShow} />
+		<Route path="/1eZAqU7HbXBrNXfy1rtx" component={AuthenticationPage} />
 	</Route>
 );

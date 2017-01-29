@@ -14,7 +14,7 @@ class PostsNew extends Component {
 		this.props.createPost(props)
 			.then(() => {
 				// blog post has been created, navigate to index
-				this.context.router.push('/luus-blog');
+				this.context.router.push('/');
 			});
 	}
 

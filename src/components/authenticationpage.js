@@ -10,7 +10,7 @@ class AuthPage extends Component {
 
 	handleOnClick(auth) {
 		this.props.authenticate(auth);
-		this.context.router.push('/luus-blog');
+		this.context.router.push('/');
 	}
 
 	renderAuthButton() {
